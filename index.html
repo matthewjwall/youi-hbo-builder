@@ -18,39 +18,39 @@
 
 <head>
 	<meta charset="utf-8">
-	<script src="./ext.js"></script>
+
+	<script src="./js/ext.js"></script>
 	<script src="./lib/CSInterface.js"></script>
 	<script src="./lib/jquery-1.9.1.js"></script>
 	<script src="./lib/Vulcan.js"></script>
-	<script type="text/javascript">
+	<script src="./js/main.js"></script>
 
-		$(document).ready(function () {
-
-
-			// For functions which require interaction at the JavaScript level, we provide these JQuery-based
-			// handlers, instead of directly invoking ExtendScript .This givs the JavaScript layer a chance
-			// to pass data into the ExtendScript layer, and process the results.
-
-			$("#sendGreen").on("click", function (e) {
-				e.preventDefault();
-				var csInterface = new CSInterface();
-
-				csInterface.evalScript('$._ext.makeButton([0.55,0.75,0.25])'); //, myTextHandlerFunction
-			});
-			$("#sendBlue").on("click", function (e) {
-				e.preventDefault();
-				var csInterface = new CSInterface();
-
-				csInterface.evalScript('$._ext.makeButton([0.65,1.05,2.25])'); //, myTextHandlerFunction 65,105,225
-			});
-		});
-	</script>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
-<body onLoad="onLoaded()">
-	<button id="sendGreen">Green</button>
-	<button id="sendBlue">Blue</button>
+<body>
+	<div id="root">
+		<img id="logo" src="./img/logo-header-4x.png" width="400" height="75">
+		<div class="container" id="list">
+			<a href="./design-system.html"><img src="./img/design-system-thumbnail.gif" ></a>
+			<img class="thumbnail" src="./img/main_2.gif" >
+			<img class="thumbnail" src="./img/card_generic.png" >
+			<img class="thumbnail" src="./img/card_generic.png" >
+			<img class="thumbnail" src="./img/card_generic.png" >
+			<img class="thumbnail" src="./img/card_generic.png" >
+			<img class="thumbnail" src="./img/card_generic.png" >
+			<img class="thumbnail" src="./img/card_generic.png" >
+		</div>
+	</div>
 </body>
 
 </html>
+
+<!--
+	<body onLoad="onLoaded()">
+		<button id="sendGreen">Green</button>
+		<button id="sendBlue">Blue</button>
+	</body>
+
+	<a href="../html-link.htm"><img src="flower.jpg" width="82" height="86" title="White flower" alt="Flower"></a>
+-->

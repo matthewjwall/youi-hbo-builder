@@ -46,16 +46,16 @@
 					<Menu>You.i HBO Builder</Menu>
 					<Geometry>
 						<Size>
-							<Height>100</Height>
-							<Width>250</Width>
+							<Height>632</Height>
+							<Width>400</Width>
 						</Size>
 						<MaxSize>
-							<Height>500</Height>
-							<Width>500</Width>
+							<Height>632</Height>
+							<Width>400</Width>
 						</MaxSize>
 						<MinSize>
-							<Height>100</Height>
-							<Width>250</Width>
+							<Height>632</Height>
+							<Width>400</Width>
 						</MinSize>
 					</Geometry>
 				</UI>
